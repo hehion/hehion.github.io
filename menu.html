@@ -20,7 +20,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
-      margin-bottom: 10px; /* 간격 좁게 조정 */
+      margin-bottom: 10px;
     }
 
     .top-bar a {
@@ -32,7 +32,7 @@
     .top-bar .soft {
       color: #bbb;
       font-size: 0.9rem;
-      opacity: 0.3; /* 더 흐릿하게 */
+      opacity: 0.3;
       transition: opacity 0.3s;
     }
 
@@ -58,6 +58,29 @@
     .menu a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 768px) {
+      .top-bar a,
+      .menu a {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .top-bar {
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .top-bar a,
+      .menu a {
+        font-size: 0.85rem;
+      }
+
+      body {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -79,7 +102,7 @@
     <a href="https://hhchef.blogspot.com">Chef!</a>
   </div>
 
-<hr style="border: none; border-top: 1px solid #ddd; margin: 10px 0;">
+  <hr style="border: none; border-top: 1px solid #ddd; margin: 10px 0;">
 
 </body>
 </html>
