@@ -1,114 +1,124 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>종이비행기 - HH의 블로그</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hehion</title>
   <style>
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      background-color: #fdfdfc;
-      color: #333;
-      line-height: 1.8;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    .container {
-      max-width: 700px;
-      margin: 80px auto;
-      padding: 0 24px;
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
     }
-    h1 {
-      font-size: 1.8rem;
+
+    header {
+      background-color: #fafafa;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
     }
-    p {
-      font-size: 1.1rem;
-      margin: 20px 0;
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      padding: 4px 8px;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #f0f0f0;
+      border-radius: 4px;
+    }
+
+    .soft {
+      color: #aaa;
+      font-size: 0.9rem;
+      opacity: 0.3;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+    }
+
+    .content p {
       white-space: pre-line;
     }
-    .signature {
-      text-align: right;
-      font-style: italic;
-      margin-top: 40px;
-    }
+
     @media (max-width: 600px) {
-      .container {
-        padding: 0 16px;
+      header h1 {
+        font-size: 1.4rem;
       }
-      h1 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
+      nav a {
+        font-size: 0.85rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>내 마음을 적은 종이</h1>
+  <header>
+    <h1>hehion ... hh</h1>
+    <nav>
+      <a href="#">home</a>
+      <a href="https://hhscrap.blogspot.com/">scrap</a>
+      <a href="https://hharchug.blogspot.kr">ARCH</a>
+      <a href="https://hhinnc.blogspot.kr">..inNC</a>
+      <a href="https://hhincs.blogspot.com/2018/06/20185.html">..inCS</a>
+      <a href="https://hhchef.blogspot.com">Chef!</a>
+      <a href="https://hhtoday.blogspot.kr" class="soft">'s today</a>
+      <a href="https://hhyesterday.blogspot.kr/p/20130728.html" class="soft">'s yesterday</a>
+      <a href="https://hhfavorite.blogspot.kr" class="soft">'s ☆</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h2>내 마음을 적은 종이</h2>
     <p>
-그 종이로 비행기를 접어서
-하늘로 날린다
+내 마음을 적은 종이
+그 종이로 비행기를 접어서 하늘로 날린다
 
 그렇게 날아간 비행기는 어디로 갈까
-
-어딘가에 떨어져서
-누군가의 발에 밟혀 더럽혀질 수도 있겠고
+어딘가에 떨어져서 누군가의 발에 밟혀 더럽혀질 수도 있겠고
 혹은 손에 닿아 읽혀질 수도 있겠고
 ...
-아니면
-정말로 하늘속으로 녹아들수도 있겠지
+아니면 정말로 하늘속으로 녹아들수도 있겠지
 
 이런저런 상상은 즐겁다
 마치 내가 마법을 부리는 것 같은 상상
 
-어떤 상상이건
-틀림이 없는 사실은
 그 종이는 분명히 날려졌고
 그 종이 속의 내 마음은 분명히 존재했다는 것
 
-
-내 마음이
-정말 하늘의 깊고 깊은 속으로 들어가길 바라며
-
-내가 어딘가를 향해 걸어가거나
-어느 한 지점에 멍하니 서있어도
-누군가의 오해를 사거나
-누군가의 즐겁지 않은 시선을 받는다해도
-또 스스로가 나같지 않은 기분을 느낀다 해도
-
 내 진심을 하늘만은 알아주겠지 하는 희망을 가지며
-
-
-난 곧 비행기가 될 이 위에
-글을 쓴다
-
-
-이 종이비행기는
-내가 상상하는 것 이상으로
-그러니까 저 바람과 저 희망보다도 훨씬더
-위안이 되고, 믿음을 준다
-
-...
-
-단지
-한순간의 종이비행기일 뿐이니까
+난 곧 비행기가 될 이 위에 글을 쓴다
     </p>
-    <p class="signature">- 2016.7.</p>
   </div>
-
-<a href="frame.html" style="
-  display: inline-block;
-  margin-top: 40px;
-  padding: 12px 24px;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-">들어가기(ENTER) →</a>
-
 </body>
 </html>
