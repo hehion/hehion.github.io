@@ -20,7 +20,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 10px; /* 간격 좁게 조정 */
     }
 
     .top-bar a {
@@ -32,11 +32,12 @@
     .top-bar .soft {
       color: #bbb;
       font-size: 0.9rem;
-      transition: 0.3s;
+      opacity: 0.3; /* 더 흐릿하게 */
+      transition: opacity 0.3s;
     }
 
     .top-bar .soft:hover {
-      color: #666;
+      opacity: 0.7;
     }
 
     .menu {
