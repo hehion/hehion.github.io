@@ -15,6 +15,7 @@
       height: 100%;
       overflow: hidden;
       font-family: "Noto Sans KR", sans-serif;
+      background-color: #fff;
     }
 
     .container {
@@ -29,15 +30,35 @@
       border: none;
     }
 
-    .content-frame {
+    .iframe-wrapper {
       flex: 1;
-      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .content-frame {
+      width: 1280px;
+      height: 100%;
       border: none;
+      transform: scale(0.85);
+      transform-origin: top center;
+    }
+
+    @media (max-width: 1024px) {
+      .content-frame {
+        transform: scale(0.75);
+      }
     }
 
     @media (max-width: 768px) {
       .menu-frame {
         height: 120px;
+      }
+
+      .content-frame {
+        transform: scale(0.65);
       }
     }
 
@@ -47,19 +68,17 @@
       }
 
       .content-frame {
-        transform: scale(0.85);
-        transform-origin: top center;
+        transform: scale(0.55);
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- 메뉴는 항상 위에 고정 -->
     <iframe src="menu.html" class="menu-frame" scrolling="no"></iframe>
-
-    <!-- 메인 프레임: name="main" 꼭 있어야 함 -->
-    <iframe src="https://hehion.blogspot.com" class="content-frame" name="main"></iframe>
+    <div class="iframe-wrapper">
+      <iframe src="https://hehion.blogspot.com" class="content-frame" name="main"></iframe>
+    </div>
   </div>
 </body>
 </html>
